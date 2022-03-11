@@ -1,14 +1,14 @@
 package sliceconv
 
-func AnyUint64(r []interface{}) []uint64 {
+func AnyString(r []interface{}) []string {
 
-	var nr []uint64
+	var nr []string
 
 	for _, d := range r {
-		v, s := d.(uint64)
+		v, s := d.(string)
 
 		if s == false {
-			return []uint64{}
+			return []string{}
 		}
 
 		nr = append(nr, v)
