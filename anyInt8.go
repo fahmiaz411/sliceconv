@@ -5,9 +5,9 @@ func AnyInt8(r []interface{}) []int8 {
 	var nr []int8
 
 	for _, d := range r {
-		v, er := d.(int8)
+		v, s := d.(int8)
 
-		if er == true {
+		if s == false {
 			return []int8{}
 		}
 

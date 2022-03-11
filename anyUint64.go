@@ -5,9 +5,9 @@ func AnyInt64(r []interface{}) []int64 {
 	var nr []int64
 
 	for _, d := range r {
-		v, er := d.(int64)
+		v, s := d.(int64)
 
-		if er == true {
+		if s == false {
 			return []int64{}
 		}
 

@@ -5,9 +5,9 @@ func AnyInt16(r []interface{}) []int16 {
 	var nr []int16
 
 	for _, d := range r {
-		v, er := d.(int16)
+		v, s := d.(int16)
 
-		if er == true {
+		if s == false {
 			return []int16{}
 		}
 

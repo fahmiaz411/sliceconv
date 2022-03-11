@@ -5,9 +5,9 @@ func AnyInt(r []interface{}) []int {
 	var nr []int
 
 	for _, d := range r {
-		v, er := d.(int)
+		v, s := d.(int)
 
-		if er == true {
+		if s == false {
 			return []int{}
 		}
 
